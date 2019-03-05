@@ -2,7 +2,7 @@
 ## macOS command line utility for displaying a menubar item with a popover web view, while simultaneously running a process
 It is written in Swift 3 and has been testedd and confirmed to work on macOs 10.12.6 up to 10.14.3
 
-[You can get the latest pre-built Trigger pkg from here](https://s3.amazonaws.com/taniacomputer/MenuBarTrigger+v1.1.pkg) (pkg installs Trigger.app in /usr/local) 
+[You can get the latest pre-built MenuBarTrigger pkg from here](https://s3.amazonaws.com/taniacomputer/MenuBarTrigger+v1.1.pkg) (pkg installs MenuBarTrigger.app in /usr/local) 
 
 ## Usage: 
 

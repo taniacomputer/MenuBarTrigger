@@ -6,7 +6,7 @@ Each webview/command pair can have an icon allocated to it, so that the menubar 
 
 It is written in Swift 3 and has been testedd and confirmed to work on macOs 10.12.6 up to 10.14.3
 
-[You can get the latest pre-built MenuBarTrigger pkg from here](https://s3.amazonaws.com/taniacomputer/MenuBarTrigger+v1.1.pkg) (pkg installs MenuBarTrigger.app in /usr/local) 
+[You can get the latest pre-built MenuBarTrigger pkg from here](https://s3.amazonaws.com/taniacomputer/MenuBarTrigger+v1.0.pkg) (pkg installs MenuBarTrigger.app in /usr/local) 
 
 ## Usage: 
 

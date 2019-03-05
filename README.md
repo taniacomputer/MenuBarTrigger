@@ -48,9 +48,9 @@ wait displays the webView until a particular link on the presented HTML.
 MenuBarTrigger.app/Contents/MacOS/MenuBarTrigger WEBVIEW wait 
 
 What occurs once the link is clicked depends on the url:
-- A link to "next", eg. <a href="http://next">NEXT</a>, makes MenuBarTrigger proceed to the next web view/command pair.
-- A link to "formParse", eg. <a href="http://formParse">Submit</a>, will inspect any form values and return the results to stdout. before proceeding to the next web view/command pair.
-- A link to "quit", eg. <a href="http://quit">Done</a>, terminates MenuBarTrigger.
+- A link to "next", eg. `<a href="http://next">NEXT</a>`, makes MenuBarTrigger proceed to the next web view/command pair.
+- A link to "formParse", eg. \<a href="http://formParse">Submit</a>, will inspect any form values and return the results to stdout. before proceeding to the next web view/command pair.
+- A link to "quit", eg. \<a href="http://quit">Done</a>, terminates MenuBarTrigger.
 Be sure to add http:// in the link URL (required by macOS 10.12.4+)
 
 ### COMMAND --icon <Path to image file>

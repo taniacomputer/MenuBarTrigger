@@ -1,12 +1,17 @@
 # MenuBarTrigger
 ## macOS command line utility for displaying a menubar item with a popover web view, while simultaneously running a process
+## The popover is a locally hosted webview. You can give MenuBarTrigger more than one web view and command to present, in which case it will move on to the next pair once the previous command finishes executing.
+##  If the web view content has form input elements, eg. a checkbox, placed within the <form></form> tags, MenuBarTrigger can send the input value to standard output. 
+## Each webview/command pair can have an icon allocated to it, so that the menubar icon changes as MenuBarTrigger progresses along the webview/command chain.
+
 It is written in Swift 3 and has been testedd and confirmed to work on macOs 10.12.6 up to 10.14.3
 
 [You can get the latest pre-built MenuBarTrigger pkg from here](https://s3.amazonaws.com/taniacomputer/MenuBarTrigger+v1.1.pkg) (pkg installs MenuBarTrigger.app in /usr/local) 
 
 ## Usage: 
 
->MenuBarTrigger.app/Contents/MacOS/MenuBarTrigger WEBVIEW_1 COMMAND_1 WEBVIEW_2 COMMAND_2 ... [OPTIONS]
+>MenuBarTrigger.app/Contents/MacOS/MenuBarTrigger WEBVIEW_1 COMMAND_1 
+>WEBVIEW_2 COMMAND_2 ... [OPTIONS]
 
 MenuBarTrigger displays a webView pop-over while simultaneously executing a command. Once the command
 finishes executing MenuBarTrigger moves on to the next webView/command pair.

@@ -49,8 +49,8 @@ MenuBarTrigger.app/Contents/MacOS/MenuBarTrigger WEBVIEW wait
 
 What occurs once the link is clicked depends on the url:
 - A link to "next", eg. `<a href="http://next">NEXT</a>`, makes MenuBarTrigger proceed to the next web view/command pair.
-- A link to "formParse", eg. \<a href="http://formParse">Submit</a>, will inspect any form values and return the results to stdout. before proceeding to the next web view/command pair.
-- A link to "quit", eg. \<a href="http://quit">Done</a>, terminates MenuBarTrigger.
+- A link to "formParse", eg. `<a href="http://formParse">Submit</a>`, will inspect any form values and return the results to stdout. before proceeding to the next web view/command pair.
+- A link to "quit", eg. `<a href="http://quit">Done</a>`, terminates MenuBarTrigger.
 Be sure to add http:// in the link URL (required by macOS 10.12.4+)
 
 ### COMMAND --icon <Path to image file>
@@ -76,7 +76,12 @@ The range for this display is 20 - 701 pixels.
 Default height is 420px.
 
 **-w, --width <window width>**
- Width, in pixels, of content window.
+Width, in pixels, of content window.
 Must be within the minimum and maximum width of the content window.
 The range for this display is 20 - 801 pixels.
 Default width is 420px.
+ 
+### EXAMPLES
+>/usr/local/MenuBarTrigger.app/Contents/MacOS/MenuBarTrigger --file /tmp/o365_installation_progress.html "policy -trigger o365 --icon /tmp/o365-icon.png" --width 325 --height 190 
+
+>/usr/local/MenuBarTrigger.app/Contents/MacOS/MenuBarTrigger --file /tmp/zoom_installation_progress.html "policy -trigger zoom --icon /tmp/zoom-icon.png" --icon /tmp/setup-icon.png

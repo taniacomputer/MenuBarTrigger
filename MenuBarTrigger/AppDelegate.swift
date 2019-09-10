@@ -108,8 +108,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             index += 1
         }
             
-        let storyboard = NSStoryboard.init(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
-        let vc = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "vc")) as! CustomViewController
+        let storyboard = NSStoryboard.init(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateController(withIdentifier: "vc") as! CustomViewController
         let size = NSSize(width: CGFloat(width), height: CGFloat(height))
         
         vc.view.frame.size = size
@@ -123,7 +123,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 let image = NSImage(byReferencingFile: "\(buttonIconPath)")
                     button.image = image
             } else {
-                    button.image = NSImage(named: NSImage.Name(rawValue: "default-icon"))
+                    button.image = NSImage(named: "default-icon")
             }
                 
             button.action = #selector(togglePopover(_:))

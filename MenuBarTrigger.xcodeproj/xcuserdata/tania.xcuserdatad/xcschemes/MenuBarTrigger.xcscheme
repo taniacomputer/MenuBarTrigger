@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -46,7 +45,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -66,31 +64,31 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "--file"
-            isEnabled = "NO">
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Users/tania/Desktop/MenuBarStatusHTML/1.html"
-            isEnabled = "NO">
+            argument = "/tmp/get_option.html"
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "&quot;sleep 5&quot;,&quot;Installation&quot;"
-            isEnabled = "NO">
+            argument = "wait"
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "--file"
-            isEnabled = "NO">
+            argument = "-h"
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Users/tania/Desktop/MenuBarStatusHTML/2.html"
-            isEnabled = "NO">
+            argument = "600"
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "&quot;sleep 5 --icon /Users/tania/Desktop/MenuBarStatusHTML/icon-2.png&quot;,&quot;Install2&quot;"
-            isEnabled = "NO">
+            argument = "-w"
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "--file"
-            isEnabled = "NO">
+            argument = "600"
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/Users/tania/Desktop/MenuBarStatusHTML/3.html"
@@ -158,7 +156,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "--help"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
       <AdditionalOptions>

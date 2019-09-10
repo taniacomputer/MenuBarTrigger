@@ -223,8 +223,8 @@ class CustomViewController: NSViewController, WKNavigationDelegate, WKUIDelegate
     }
 	
 	func loadLocalFile(fullPath: String, directory: String) {
-		let fullPath = NSURL(fileURLWithPath: "file://\(fullPath)")
-		let dir = NSURL(fileURLWithPath: "file://\(directory)")
+		let fullPath = NSURL(fileURLWithPath: "\(fullPath)")
+		let dir = NSURL(fileURLWithPath: "\(directory)")
         // Call from main thread here
          DispatchQueue.main.async {
             if #available(OSX 10.11, *) {

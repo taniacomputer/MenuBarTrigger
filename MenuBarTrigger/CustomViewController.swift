@@ -62,8 +62,8 @@ class CustomViewController: NSViewController, WKNavigationDelegate, WKUIDelegate
 	
   func createTaskArray() {
 		var path = "/usr/local/bin/jamf"
-		let max = commandviews.count - 1
-		for i in 0...max {
+        let max = commandviews.count
+        for i in 0..<max {
             
 			if commandviews[i].jssCommand.first == "sleep" {
 				path = "/bin/sleep"

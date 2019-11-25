@@ -31,7 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
      
         var file:LocalWebFile = (nil, nil)
         let numberOfArguments = Int(CommandLine.argc)
-        var index = 1
+        var index = 0
         while index < numberOfArguments {
             let arg = CommandLine.arguments[index]
             var jamfVerbAndName = ""
@@ -97,13 +97,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     }
                 }
                 index += 1
-            case "--help", "-h":
+            case "--help":
                 displayManPage()
             case "-NSDocumentRevisionsDebugMode":
                 index += 1
                 break;
             default:
-                error(err: "Unknown argument: \(arg)")
+                error(err: "Unknown or missing argument(s): \(arg)")
             }
             index += 1
         }

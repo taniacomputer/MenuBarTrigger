@@ -31,7 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
      
         var file:LocalWebFile = (nil, nil)
         let numberOfArguments = Int(CommandLine.argc)
-        var index = 0
+        var index = 1
         while index < numberOfArguments {
             let arg = CommandLine.arguments[index]
             var jamfVerbAndName = ""

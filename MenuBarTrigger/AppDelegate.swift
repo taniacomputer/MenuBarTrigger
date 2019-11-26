@@ -31,6 +31,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
      
         var file:LocalWebFile = (nil, nil)
         let numberOfArguments = Int(CommandLine.argc)
+        if numberOfArguments == 1  {
+             // If numberOfArguments is only 1, then no arguments were set.
+             // (CommandLine() counts the actual app path itself as an argument. Surprise?).
+             // We need arguments to work, so nothing means the user needs help.
+             print("No arguments were specified. Did you need --help?")
+             quit()
+         }
         var index = 1
         while index < numberOfArguments {
             let arg = CommandLine.arguments[index]

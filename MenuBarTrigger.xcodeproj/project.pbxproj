@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		230B99B62327A9220049970A /* serialize.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = serialize.js; path = ../../../Scripts/serialize.js; sourceTree = "<group>"; };
+		230B99B62327A9220049970A /* serialize.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = serialize.js; sourceTree = "<group>"; };
 		23402D4D20CBE2C700D7BC47 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		239E746B20574B700099C8CC /* MenuBarTrigger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuBarTrigger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239E746E20574B700099C8CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = taniacomputer;
 				TargetAttributes = {
 					239E746A20574B700099C8CC = {
@@ -277,9 +277,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 58T9QBNJ2C;
+				DEVELOPMENT_TEAM = W86HTNC7AH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = MenuBarTrigger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -293,9 +294,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 58T9QBNJ2C;
+				DEVELOPMENT_TEAM = W86HTNC7AH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = MenuBarTrigger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
